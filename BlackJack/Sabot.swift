@@ -9,6 +9,7 @@
 import Foundation
 
 public class Sabot{
+    
     var Cards=Array<Card>()
     
     init()
@@ -22,6 +23,11 @@ public class Sabot{
         Cards = DataModels().LoadCards()
         
         return Cards
+    }
+    func mixedCards()->()
+    {
+         return Cards.shuffle()
+        
     }
     
     //Supprime les 5 première cartes
@@ -38,6 +44,14 @@ public class Sabot{
     {
         return Cards.removeLast()
     }
+}
 
-    
+//Extension Array pour mélanger de manière aléatoire
+extension Array {
+    mutating func shuffle() {
+        for i in 0 ..< (count - 1) {
+            let j = Int(arc4random_uniform(UInt32(count - i))) + i
+            swap(&self[i], &self[j])
+        }
+    }
 }

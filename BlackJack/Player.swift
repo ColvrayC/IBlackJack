@@ -50,9 +50,16 @@ func hint()
 }
 
 //Vérifie que l'utilisateur peut jouer le double
-func candouble()
+func candouble()->Bool
 {
+    let points = calcPoint()
     
+    //Si le totoal des points du joeur et de 10,11 ou 12
+    if(points == 10 || points == 11 || points == 12)
+    {H
+        return true
+    }
+    return false
 }
 
 //Le jouer joue le double
@@ -90,30 +97,43 @@ func hasBlackJack()->Bool
     return false
 }
 
-//Vérifie si le joueur peut prendre l'assurace
-func canAssurance()
-{
-    
-}
 
-//Le joueur prend l'assurance
+//Le joueur prend l'assurance (ici on sait que c'est dispponible pour le joueur
 func assurance()
 {
     
 }
+    
+//Vérifie si le joueur peut abandonner
+func canAbandon()
+{
+        
+}
 
+    
 //Le joueur abandonne son jeu
-func toAbandon()
+func abandon()
 {
     
 }
 
+func calcPoint()->Int
+{
+    return 21
+}
+    
 //Calcul l'argent du joueur à la fin de la partie
 func CalcMoney()->Int
 {
     return 21
 }
 
+//Le joueur a fini son tour
+func miseThreeTwo()
+{
+    self.mise = self.mise + self.mise/2
+}
+    
 //Le joueur a fini son tour
 func finished()
 {

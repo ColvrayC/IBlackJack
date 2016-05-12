@@ -10,20 +10,21 @@ import Foundation
 
 class Croupier {
     
-    var oSabot:Sabot    
+    var oSabot:Sabot
     init()
     {
         oSabot = Sabot()
     }
+    var CroupierCards = Array<Card>()
     
-    
+
     //Le croupier mélangeles cartes
     func mixedCards()
     {
-   
+        oSabot.mixedCards()
     }
     
-    //Le croupier coupe le tas en enlevant la carte bleu et rouge
+    //Le croupier coupe le tas en enlevant le contenu entre la carte bleu et rouge
     func cutCards()
     {
         
@@ -50,14 +51,19 @@ class Croupier {
     //Le croupier se distribue sa première carte
     func distributeOneCardItSelf()
     {
-        
+        CroupierCards.append(oSabot.giveCard())
     }
     
-    //Return vrai si la première carte du croupier est un AS
-    func hasAS()
+    //Return vrai si le croupir a un AS
+    func hasAS()->Bool
     {
-        
+        for Card in CroupierCards
+        {
+            if(Card.code=="1")
+            {
+                return true
+            }
+        }
+        return false
     }
-    
-
 }
