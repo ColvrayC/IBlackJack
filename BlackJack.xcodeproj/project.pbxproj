@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		915710611CE4A834005839C5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915710601CE4A834005839C5 /* Player.swift */; };
+		915710631CE4A842005839C5 /* Croupier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915710621CE4A842005839C5 /* Croupier.swift */; };
+		915710651CE4A854005839C5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915710641CE4A854005839C5 /* Card.swift */; };
+		915710671CE4A871005839C5 /* Sabot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915710661CE4A871005839C5 /* Sabot.swift */; };
+		915710691CE4B0DB005839C5 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915710681CE4B0DB005839C5 /* DataModels.swift */; };
 		91F4A2371CE324BE00AB9F45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4A2361CE324BE00AB9F45 /* AppDelegate.swift */; };
 		91F4A2391CE324BE00AB9F45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4A2381CE324BE00AB9F45 /* ViewController.swift */; };
 		91F4A23C1CE324BE00AB9F45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F4A23A1CE324BE00AB9F45 /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		915710601CE4A834005839C5 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		915710621CE4A842005839C5 /* Croupier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Croupier.swift; sourceTree = "<group>"; };
+		915710641CE4A854005839C5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		915710661CE4A871005839C5 /* Sabot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sabot.swift; sourceTree = "<group>"; };
+		915710681CE4B0DB005839C5 /* DataModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		91F4A2331CE324BE00AB9F45 /* BlackJack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackJack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F4A2361CE324BE00AB9F45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91F4A2381CE324BE00AB9F45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +70,11 @@
 				91F4A23D1CE324BE00AB9F45 /* Assets.xcassets */,
 				91F4A23F1CE324BE00AB9F45 /* LaunchScreen.storyboard */,
 				91F4A2421CE324BE00AB9F45 /* Info.plist */,
+				915710601CE4A834005839C5 /* Player.swift */,
+				915710621CE4A842005839C5 /* Croupier.swift */,
+				915710641CE4A854005839C5 /* Card.swift */,
+				915710661CE4A871005839C5 /* Sabot.swift */,
+				915710681CE4B0DB005839C5 /* DataModels.swift */,
 			);
 			path = BlackJack;
 			sourceTree = "<group>";
@@ -136,6 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F4A2391CE324BE00AB9F45 /* ViewController.swift in Sources */,
+				915710671CE4A871005839C5 /* Sabot.swift in Sources */,
+				915710611CE4A834005839C5 /* Player.swift in Sources */,
+				915710651CE4A854005839C5 /* Card.swift in Sources */,
+				915710691CE4B0DB005839C5 /* DataModels.swift in Sources */,
+				915710631CE4A842005839C5 /* Croupier.swift in Sources */,
 				91F4A2371CE324BE00AB9F45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +308,7 @@
 				91F4A2471CE324BE00AB9F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
